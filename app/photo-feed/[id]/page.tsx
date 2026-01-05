@@ -9,7 +9,7 @@ const PhotoPage = async ({ params }: { params: Promise<{ id: string }> }) => {
     <div className="container mx-auto my-10">
       <div className="w1/2 mx-auto">
         <div>
-          <h1 className="text-center text-3xl font-bold my-4">
+          <h1 className="text-center text-3xl font-bold my-4 ">
             {photo?.name} Kamran
           </h1>
         </div>
@@ -19,8 +19,8 @@ const PhotoPage = async ({ params }: { params: Promise<{ id: string }> }) => {
           className="w-full object-cover aspect-square"
         />
         <div className="bg-white py-4">
-          <h3>{photo?.photographer}</h3>
-          <p>{photo?.location}</p>
+          <h3 className="text-black">{photo?.photographer}</h3>
+          <h3 className="text-black">{photo?.location}</h3>
         </div>
       </div>
     </div>
