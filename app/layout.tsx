@@ -3,10 +3,8 @@ import "@/app/globals.css";
 
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <html>
-      <body>
-        <div>{children}</div>
-      </body>
+    <html lang="en" suppressHydrationWarning>
+      <body suppressHydrationWarning>{children}</body>
     </html>
   );
 };
